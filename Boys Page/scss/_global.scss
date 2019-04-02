@@ -1,0 +1,116 @@
+%header{
+	text-align:center;
+}
+
+.boys_section{ 
+    .title{
+       @extend %header;
+      }
+    .category{
+	  text-align:center;
+	  }
+	padding:0px 5px;
+	overflow-x:hidden;
+	    .btn{
+		     background-color: #fff;
+		     border: 2px solid #000;
+		     border-radius: 18px;
+		     padding: 12px 18px;
+		     font-size:10px;
+		     position: relative;
+	         bottom: 18px;
+	            &:hover{
+	               background-color:#828282;
+	               color:#fff;
+	            }
+
+			   a{
+	            text-decoration:none;
+	            text-transform:uppercase;
+	            color:#000;
+	                &:hover{
+	                    color:#fff;
+	                }
+			}
+	    }
+}
+
+.shop{
+    padding-bottom:10px;
+    overflow-x:hidden;
+	    .title{
+	       @extend %header;
+	    }
+    .shop_by_price{
+	     display:grid;
+	     padding:2rem;
+		    .btn-primary{ 
+		          padding:25px;
+		          margin-top:30px;
+		          background-image: linear-gradient(to right, #316bab, #8bdfec);
+		          border:none; 
+		    }
+        }
+
+	.item1{
+	    float:left;
+	   	box-shadow: 2px 3px 13px -2px #cacaca;
+		    &:hover{
+		      	  box-shadow: 4px 6px 10px 0px rgb(185, 185, 185);
+		    }
+		    &:after{
+		      content:"";
+		      float:none;
+		      clear:both;
+		    }
+	    .head-text{
+            background-color: #fbfbfb;
+		    padding: 1rem;
+		    text-align: center;
+		    color: red;
+		    text-transform:uppercase;
+		    text-weight:700;
+        }
+        @media (max-width:768px){
+                margin: 2rem 5rem;
+           }
+	}
+
+	.item2{
+		float:left;
+		margin-left: 1rem;
+      	box-shadow: 2px 3px 13px -2px #cacaca;
+	        &:hover{
+		      	   box-shadow: 4px 6px 10px 0px rgb(185, 185, 185);
+		    }
+			&:after{
+		      content:"";
+		      float:none;
+		      clear:both;
+	        }
+	    .head-text{
+            background-color: #fbfbfb;
+		    padding: 1rem;
+		    text-align: center;
+		    color: red;
+		    text-transform:uppercase;
+		    text-weight:700;
+           }
+            @media (max-width:768px){
+                margin: 2rem 5rem;
+           }
+        }
+
+       .text-muted{
+             a{
+		       text-decoration:none;
+		       text-transform:uppercase;
+		       color:#000;
+		       font-weight:700;
+	               &:hover{
+	                 color:#black;
+	            }
+		    }
+	    }
+  }
+

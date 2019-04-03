@@ -6038,78 +6038,159 @@ a.text-dark:hover, a.text-dark:focus {
   .table-bordered td {
     border: 1px solid #ddd !important; } }
 
-.boys_section .title, .shop .title {
-  text-align: center; }
+.boys_section .title, .shop .title, .offers .title, .feaured_products .title, .brands .title, .shop_by_clothing .title {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px; }
 
 .boys_section {
   padding: 0px 5px;
   overflow-x: hidden; }
   .boys_section .category {
     text-align: center; }
-  .boys_section .btn {
+  .boys_section .btn-default {
     background-color: #fff;
     border: 2px solid #000;
     border-radius: 18px;
-    padding: 12px 18px;
-    font-size: 10px;
+    padding: 1rem 4rem;
+    font-size: 14px;
     position: relative;
-    bottom: 18px; }
-    .boys_section .btn:hover {
+    bottom: 32px; }
+    .boys_section .btn-default:hover {
       background-color: #828282;
+      border: 2px solid #000;
       color: #fff; }
-    .boys_section .btn a {
+    .boys_section .btn-default a {
       text-decoration: none;
       text-transform: uppercase;
       color: #000; }
-      .boys_section .btn a:hover {
+      .boys_section .btn-default a:hover {
         color: #fff; }
+  .boys_section .button .btn-view {
+    padding: 15px;
+    background: #fff;
+    border: 2px solid #cacaca;
+    color: #000;
+    margin: -10px;
+    width: 100%; }
+    .boys_section .button .btn-view a {
+      color: #000;
+      text-decoration: none; }
+    @media (max-width: 768px) {
+      .boys_section .button .btn-view {
+        margin: 1rem 0px; } }
 
 .shop {
   padding-bottom: 10px;
   overflow-x: hidden; }
   .shop .shop_by_price {
-    display: grid;
-    padding: 2rem; }
-    .shop .shop_by_price .btn-primary {
-      padding: 25px;
-      margin-top: 30px;
-      background-image: linear-gradient(to right, #316bab, #8bdfec);
-      border: none; }
-  .shop .item1 {
-    float: left;
-    box-shadow: 2px 3px 13px -2px #cacaca; }
-    .shop .item1:hover {
-      box-shadow: 4px 6px 10px 0px #b9b9b9; }
-    .shop .item1 .head-text {
-      background-color: #fbfbfb;
-      padding: 1rem;
-      text-align: center;
-      color: red;
+    display: grid; }
+    .shop .shop_by_price .btn {
+      border: 1px solid #cacaca;
+      display: block;
+      width: 100%;
+      background: #fff;
+      color: #000;
+      margin-bottom: 3rem;
+      padding: 1.2rem; }
+      .shop .shop_by_price .btn:hover {
+        border: 1px solid #cacaca;
+        background: #fff;
+        color: #000; }
+  .shop .shop_by_age {
+    display: flex;
+    justify-content: left; }
+    .shop .shop_by_age .item1 {
+      width: 48%;
+      box-shadow: 2px 3px 13px -2px #cacaca; }
+      .shop .shop_by_age .item1:hover {
+        box-shadow: 4px 6px 10px 0px #b9b9b9; }
+      .shop .shop_by_age .item1:after {
+        content: "";
+        display: table;
+        clear: both; }
+      .shop .shop_by_age .item1 .head-text {
+        background-color: #fbfbfb;
+        padding: 1rem;
+        text-align: center;
+        color: red;
+        text-transform: uppercase;
+        text-weight: 700; }
+    .shop .shop_by_age .item2 {
+      width: 48%;
+      box-shadow: 2px 3px 13px -2px #cacaca;
+      margin-left: 2rem; }
+      .shop .shop_by_age .item2:hover {
+        box-shadow: 4px 6px 10px 0px #b9b9b9; }
+      .shop .shop_by_age .item2:after {
+        content: "";
+        display: table;
+        clear: both; }
+      .shop .shop_by_age .item2 .head-text {
+        background-color: #fbfbfb;
+        padding: 1rem;
+        text-align: center;
+        color: red;
+        text-transform: uppercase;
+        text-weight: 700; }
+    .shop .shop_by_age .text-muted a {
+      text-decoration: none;
       text-transform: uppercase;
-      text-weight: 700; }
-    @media (max-width: 768px) {
-      .shop .item1 {
-        margin: 2rem 5rem; } }
-  .shop .item2 {
-    float: left;
-    margin-left: 1rem;
-    box-shadow: 2px 3px 13px -2px #cacaca; }
-    .shop .item2:hover {
-      box-shadow: 4px 6px 10px 0px #b9b9b9; }
-    .shop .item2 .head-text {
-      background-color: #fbfbfb;
-      padding: 1rem;
-      text-align: center;
-      color: red;
-      text-transform: uppercase;
-      text-weight: 700; }
-    @media (max-width: 768px) {
-      .shop .item2 {
-        margin: 2rem 5rem; } }
-  .shop .text-muted a {
+      color: #000;
+      font-weight: 700; }
+      .shop .shop_by_age .text-muted a:hover {
+        color: #black; }
+
+.feaured_products .figure-caption {
+  border-radius: 4px;
+  position: relative;
+  bottom: 25px;
+  background-color: #dc3545;
+  width: 50px;
+  color: #fff;
+  left: 37%; }
+
+.brands .figure {
+  margin-left: 2rem; }
+  @media (max-width: 768px) {
+    .brands .figure {
+      margin: 0px 8rem !important; } }
+  .brands .figure .figure-caption {
+    border: 1px solid #dcdcdc;
+    padding: 0.6rem 0.8rem;
+    min-width: 130px;
+    font-size: 0.75rem;
+    border-radius: 36px;
+    position: relative;
+    bottom: 18px;
+    width: 1%;
+    left: 20px;
+    background-color: #717171; }
+    .brands .figure .figure-caption a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 12px; }
+
+.shop_by_clothing .btn-default {
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 18px;
+  padding: 8px 34px;
+  font-size: 14px;
+  position: relative;
+  left: 25%;
+  bottom: 20px; }
+  .shop_by_clothing .btn-default:hover {
+    background-color: #828282;
+    border: 2px solid #000;
+    color: #fff; }
+  .shop_by_clothing .btn-default a {
     text-decoration: none;
     text-transform: uppercase;
-    color: #000;
-    font-weight: 700; }
-    .shop .text-muted a:hover {
-      color: #black; }
+    color: #000; }
+    .shop_by_clothing .btn-default a:hover {
+      color: #fff; }
+  @media (max-width: 768px) {
+    .shop_by_clothing .btn-default {
+      position: relative;
+      left: 36%; } }
